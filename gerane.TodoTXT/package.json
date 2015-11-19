@@ -1,0 +1,32 @@
+{
+	"name": "Language-TodoTXT",
+	"displayName": "TodoTXT",
+	"description": "Support for Todotxt Syntax Highlighting.",
+	"version": "0.0.1",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"icon": "icon.svg",
+	"homepage": "https://github.com/gerane/VSCode-TodoTXT/blob/master/gerane.TodoTXT/README.md",
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/gerane/VSCode-TodoTXT.git"
+    },
+	"contributes": {
+		"languages": [{
+			"id": "todotxt",
+			"aliases": ["TodoTXT", "todotxt"],
+			"extensions": [".txt"],
+			"configuration": "./todotxt.configuration.json"
+		}],
+		"grammars": [{
+			"language": "todotxt",
+			"scopeName": "text.todotxt",
+			"path": "./syntaxes/todotxt.tmLanguage"
+		}]
+	}
+}
